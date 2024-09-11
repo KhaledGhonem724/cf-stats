@@ -32,14 +32,11 @@ class CFResponseParser:
     def _parse_user_submission(cls, user_submission):
         """Parse and save submission related details."""
         user = User()
-        user.submissions = len(user_submission)
         freq = defaultdict(lambda: 0)
         for sb in user_submission:
             freq[sb['verdict']] += 1
 
         user.accepted = freq['OK']
-        user.wrong_ans = freq['WRONG_ANSWER']
-        user.tle = freq['TIME_LIMIT_EXCEEDED']
 
     @classmethod
     def _parse_rating_changes(cls, rating_changes):
