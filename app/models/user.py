@@ -16,7 +16,6 @@ class User:
     contests: int = 0
     submissions: int = 0
     accepted: int = 0
-    wrong_ans: int = 0
     tle: int = 0
     contributions: int = 0
     registration_unix_time: int = 0
@@ -79,5 +78,5 @@ class User:
 
         return f"Name: {self.name}\nOrg: {self.org_acronym}\nRating: {self.rating}\n" + \
                f"Rank: {self.rank}\nMax Rating: {self.max_rating}\nMax Rank: {self.max_rank}\n" + \
-               f"Contests: {self.contests}\nSubmissions: {self.submissions}\nAC: {self.accepted}\n" + \
-               f"WA: {self.wrong_ans}\nTLE: {self.tle}\nContribution: {self.contributions}\nSince: {self.member_since}"
+               f"Contests: {self.contests}\nAC: {self.accepted}\n" + \
+               f"Contribution: {self.contributions}\nSince: {self.member_since}"
