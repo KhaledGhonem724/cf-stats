@@ -38,6 +38,5 @@ class CardGenerator(IGenerator, FileHelper):
         output = re.sub('{{ max_rating }}', str(user.max_rating), output)
         output = re.sub('{{ contests }}', str(user.contests), output)
         output = re.sub('{{ accepted }}', str(user.accepted), output)
-        output = re.sub('{{ wrong_answers }}', str(user.wrong_ans), output)
         output = re.sub('{{ contributions }}', str(user.contributions), output)
         return output
