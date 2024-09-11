@@ -14,9 +14,7 @@ class User:
     max_rating: int = 0
     max_rank: str = 'newbie'
     contests: int = 0
-    submissions: int = 0
     accepted: int = 0
-    tle: int = 0
     contributions: int = 0
     registration_unix_time: int = 0
 
